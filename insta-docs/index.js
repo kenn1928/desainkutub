@@ -41,8 +41,7 @@ function downloadFile(url, filename) {
  link.click();
 }
 const closeZoom = new Hammer(zoomImg);
-closeZoom.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
-closeZoom.on('doubletap swipeleft swiperight', (e) => {
+closeZoom.on('doubletap', (e) => {
  zoom = !zoom
  if(!zoom){
   zoomImg.classList.remove('active');
