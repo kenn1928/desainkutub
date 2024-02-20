@@ -1,16 +1,16 @@
 const zoomImg = document.getElementById('zoom');
 const close = document.getElementById('close');
 const container = document.getElementById('container');
-let count = [1, 1, 1, 
-             1, 1, 1,
-             1, 1, 1, 
-             8, 1, 1,
-             1, 1, 1, 
-             1, 1, 1,
-             1, 1, 1, 
-             1, 1, 1,
-             1, 1, 1, 
-             1, 1, 1]
+let count = [1, 1, 1, //3 
+             1, 1, 1, //6
+             1, 1, 1, //9
+             8, 6, 6, //12
+             1, 1, 1, //15
+             5, 8, 4, //18
+             1, 1, 1, //21
+             5, 4, 6, //24
+             1, 1, 1, //27
+             7, 1, 6] //30
 let zoom = false
 count.forEach(() => {
  container.innerHTML += `<div class="img"></div>`
