@@ -42,7 +42,7 @@ function downloadFile(url, filename) {
 }
 const closeZoom = new Hammer(zoomImg);
 closeZoom.get("swipe").set({ direction: Hammer.DIRECTION_ALL });
-closeZoom.on('doubletap swipe', (e) => {
+closeZoom.on('doubletap swipeleft swiperight', (e) => {
  zoom = !zoom
  if(!zoom){
   zoomImg.classList.remove('active');
